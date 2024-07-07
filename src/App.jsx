@@ -68,7 +68,7 @@ function App() {
       className="w-full h-screen duration-800"
       style={{ backgroundColor: color }}
     >
-      <div className="text-4xl grid place-content-center w-full h-screen duration-100">
+      <div className="text-4xl grid place-content-center w-full h-screen duration-100 px-2">
         {whiteText.find((each) => each === color) ? (
           <h1 className="font-bold uppercase text-white text-center sm:max-w-72">
             I am a text on {article()} {color}{" "}
