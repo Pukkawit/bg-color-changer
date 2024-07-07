@@ -86,7 +86,11 @@ function App() {
               <button
                 key={`${id}`}
                 className={`outline-none px-4 py-[3px] rounded-full  shadow-lg  
-                    ${eachColor} === black ? bg-${eachColor} : bg-${eachColor}-600
+                    ${
+                      eachColor === "black"
+                        ? `bg-${eachColor}`
+                        : `bg-${eachColor}-600`
+                    }
                     
                  hover:bg-${eachColor}-700 active:bg-${eachColor}-800 
                  focus:outline-none focus:ring 
