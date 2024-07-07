@@ -87,7 +87,7 @@ function App() {
                 key={`${id}`}
                 className={`outline-none px-4 py-[3px] rounded-full  shadow-lg  
                     ${
-                      eachColor === "black"
+                      eachColor === "black" || eachColor==='white'
                         ? `bg-${eachColor}`
                         : `bg-${eachColor}-600`
                     }
