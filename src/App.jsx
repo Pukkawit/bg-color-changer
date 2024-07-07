@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [color, setColor] = useState("olive");
 
-  const pureColors = ["blue", "black", "purple", "violet"];
+  const pureColors = [];
 
   const whiteText = [
     "black",
@@ -35,7 +35,6 @@ function App() {
   const selectedPureColors = () => {
     pureColors.find((eachColor) => {
       eachColor === color;
-
       return eachColor;
     });
   };
