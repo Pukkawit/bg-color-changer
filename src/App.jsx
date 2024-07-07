@@ -96,9 +96,11 @@ function App() {
                 className={`outline-none px-4 py-[3px] rounded-full  shadow-lg  ${selectedPureColors}
                     ? bg-${eachColor}
                     : bg-${eachColor}-600 
-                 hover:bg-${eachColor}-700 active:bg-${eachColor}-800 focus:outline-none focus:ring focus:ring-${eachColor}-400 ${
-                  eachColor === "white" ? "text-black" : "text-white"
-                } hover:shadow-2xl`}
+                 hover:bg-${eachColor}-700 active:bg-${eachColor}-800 
+                 focus:outline-none focus:ring 
+                 focus:ring-${eachColor}-400 
+                 ${eachColor === "white" ? "text-black" : "text-white"} 
+                 hover:shadow-2xl`}
                 style={transitionDuration}
                 onClick={() =>
                   color !== eachColor ? setColor(eachColor) : setColor("olive")
