@@ -87,14 +87,23 @@ function App() {
                 key={`${id}`}
                 className={`outline-none px-4 py-[3px] rounded-full  shadow-lg  
                     ${
-                      eachColor === "black" || eachColor==='white'
+                      eachColor === "black" || eachColor === "white"
                         ? `bg-${eachColor}`
                         : `bg-${eachColor}-600`
                     }
                     
                  hover:bg-${eachColor}-700 active:bg-${eachColor}-800 
-                 focus:outline-none focus:ring 
-                 focus:ring-${eachColor}-400 
+                 focus:outline-none focus:ring
+                 ${
+                   eachColor === "yellow"
+                     ? `focus:ring-yellow-400`
+                     : `focus:ring-${eachColor}-400 `
+                 }
+                 ${
+                   eachColor === "lime"
+                     ? `focus:ring-lime-400`
+                     : `focus:ring-${eachColor}-400 `
+                 }
                  ${eachColor === "white" ? "text-black" : "text-white"} 
                  hover:shadow-2xl`}
                 style={transitionDuration}
@@ -152,8 +161,8 @@ function App() {
           >
             Pink
           </button>*/}
-          {/* <button
-            className="outline-none px-4 py-[3px] rounded-full  shadow-lg bg-lime-600 text-white hover:shadow-2xl hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-300"
+          {/*  <button
+            className="outline-none px-4 py-[3px] rounded-full  shadow-lg bg-fuchsia-600 text-white hover:shadow-2xl hover:bg-fuchsia-700 focus:outline-none focus:ring focus:ring-fuchsia-300"
             onClick={() =>
               color !== "green" ? setColor("green") : setColor("olive")
             }
